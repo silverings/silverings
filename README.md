@@ -24,22 +24,11 @@ usually online:     late, with coffee, questionable decisions
 <br/>
 
 <div align="center">
+<sub>
+<a href="https://www.linkedin.com/in/zakhar-vakhuta-d683b63a2/">linkedin</a>
+&nbsp;·&nbsp;
+<a href="mailto:vahutazahar@gmail.com">vahutazahar@gmail.com</a>
+</sub>
 
-<img src="https://github-readme-stats.vercel.app/api?username=silverings&show_icons=true&hide_border=true&theme=transparent&title_color=D6543F&icon_color=D6543F&text_color=F5F4F2&bg_color=00000000" height="165" alt="stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=silverings&layout=compact&hide_border=true&theme=transparent&title_color=D6543F&text_color=F5F4F2&bg_color=00000000" height="165" alt="top langs" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=silverings&hide_border=true&background=00000000&ring=D6543F&fire=D6543F&currStreakLabel=F5F4F2&sideLabels=F5F4F2&currStreakNum=F5F4F2&sideNums=F5F4F2&dates=8b8b8b" alt="streak" />
-
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/silverings/silverings/output/github-snake.svg" width="100%" alt="contribution snake" />
-</div>
-
-<br/>
-
-<div align="center">
 <sub>— silverings</sub>
 </div>
