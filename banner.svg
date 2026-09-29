@@ -1,0 +1,92 @@
+<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="silverings">
+<style>
+  .bg { fill: #07070a; }
+  .scan {
+    stroke: #eef1f4;
+    opacity: var(--base);
+    animation: flicker var(--dur) ease-in-out var(--delay) infinite;
+    transform-origin: center;
+  }
+  @keyframes flicker {
+    0%, 100% { opacity: calc(var(--base) * 0.55); }
+    50% { opacity: calc(var(--base) * 1.6); }
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: .30; }
+    50% { opacity: .68; }
+  }
+  .accentPulse { animation: pulse 4.2s ease-in-out infinite; }
+  .word {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    fill: #f5f4f2;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+  @keyframes caret { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+  .caret { animation: caret 1.05s step-end infinite; }
+</style>
+<defs>
+  <radialGradient id="glow" cx="460" cy="108" r="340" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#1a1a22" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#07070a" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#d6543f" stop-opacity="0.85"/>
+    <stop offset="100%" stop-color="#d6543f" stop-opacity="0"/>
+  </linearGradient>
+  <clipPath id="frame"><rect width="900" height="220" rx="14"/></clipPath>
+</defs>
+<g clip-path="url(#frame)">
+  <rect class="bg" width="900" height="220"/>
+  <rect width="900" height="220" fill="url(#glow)"/>
+  <rect class="accentPulse" x="0" y="0" width="210" height="220" fill="url(#accentGrad)"/>
+  <line class="scan" x1="0" y1="4.68" x2="900" y2="4.68" style="--base:0.1803636363636364;--delay:0.08s;--dur:3.45s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="9.36" x2="900" y2="9.36" style="--base:0.20163636363636367;--delay:0.17s;--dur:3.7s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="14.04" x2="900" y2="14.04" style="--base:0.2229090909090909;--delay:0.25s;--dur:3.95s" stroke-width="1.4"/>
+  <line class="scan" x1="0" y1="18.72" x2="900" y2="18.72" style="--base:0.24418181818181822;--delay:0.33s;--dur:4.2s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="23.4" x2="900" y2="23.4" style="--base:0.2654545454545455;--delay:0.42s;--dur:3.2s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="28.09" x2="900" y2="28.09" style="--base:0.2867727272727273;--delay:0.5s;--dur:3.45s" stroke-width="1.4"/>
+  <line class="scan" x1="0" y1="32.77" x2="900" y2="32.77" style="--base:0.3080454545454546;--delay:0.58s;--dur:3.7s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="37.45" x2="900" y2="37.45" style="--base:0.32931818181818184;--delay:0.66s;--dur:3.95s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="42.13" x2="900" y2="42.13" style="--base:0.3505909090909091;--delay:0.75s;--dur:4.2s" stroke-width="1.4"/>
+  <line class="scan" x1="0" y1="46.81" x2="900" y2="46.81" style="--base:0.3718636363636364;--delay:0.83s;--dur:3.2s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="51.49" x2="900" y2="51.49" style="--base:0.3931363636363637;--delay:0.91s;--dur:3.45s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="56.17" x2="900" y2="56.17" style="--base:0.41440909090909095;--delay:1.0s;--dur:3.7s" stroke-width="1.4"/>
+  <line class="scan" x1="0" y1="60.85" x2="900" y2="60.85" style="--base:0.43568181818181817;--delay:1.08s;--dur:3.95s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="65.53" x2="900" y2="65.53" style="--base:0.4569545454545455;--delay:1.16s;--dur:4.2s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="70.21" x2="900" y2="70.21" style="--base:0.4782272727272727;--delay:1.25s;--dur:3.2s" stroke-width="1.4"/>
+  <line class="scan" x1="0" y1="74.89" x2="900" y2="74.89" style="--base:0.49950000000000006;--delay:1.33s;--dur:3.45s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="79.57" x2="900" y2="79.57" style="--base:0.5207727272727273;--delay:1.41s;--dur:3.7s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="84.26" x2="900" y2="84.26" style="--base:0.5420909090909092;--delay:1.49s;--dur:3.95s" stroke-width="1.4"/>
+  <line class="scan" x1="0" y1="88.94" x2="900" y2="88.94" style="--base:0.5633636363636364;--delay:1.58s;--dur:4.2s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="93.62" x2="900" y2="93.62" style="--base:0.5846363636363636;--delay:1.66s;--dur:3.2s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="98.3" x2="900" y2="98.3" style="--base:0.605909090909091;--delay:1.74s;--dur:3.45s" stroke-width="1.4"/>
+  <line class="scan" x1="0" y1="102.98" x2="900" y2="102.98" style="--base:0.6271818181818182;--delay:1.83s;--dur:3.7s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="107.66" x2="900" y2="107.66" style="--base:0.6484545454545455;--delay:1.91s;--dur:3.95s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="112.34" x2="900" y2="112.34" style="--base:0.6302727272727273;--delay:1.99s;--dur:4.2s" stroke-width="1.4"/>
+  <line class="scan" x1="0" y1="117.02" x2="900" y2="117.02" style="--base:0.609;--delay:2.08s;--dur:3.2s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="121.7" x2="900" y2="121.7" style="--base:0.5877272727272728;--delay:2.16s;--dur:3.45s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="126.38" x2="900" y2="126.38" style="--base:0.5664545454545455;--delay:2.24s;--dur:3.7s" stroke-width="1.4"/>
+  <line class="scan" x1="0" y1="131.06" x2="900" y2="131.06" style="--base:0.5451818181818182;--delay:2.32s;--dur:3.95s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="135.74" x2="900" y2="135.74" style="--base:0.5239090909090909;--delay:2.41s;--dur:4.2s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="140.43" x2="900" y2="140.43" style="--base:0.5025909090909091;--delay:2.49s;--dur:3.2s" stroke-width="1.4"/>
+  <line class="scan" x1="0" y1="145.11" x2="900" y2="145.11" style="--base:0.48131818181818176;--delay:2.57s;--dur:3.45s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="149.79" x2="900" y2="149.79" style="--base:0.4600454545454546;--delay:2.66s;--dur:3.7s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="154.47" x2="900" y2="154.47" style="--base:0.4387727272727273;--delay:2.74s;--dur:3.95s" stroke-width="1.4"/>
+  <line class="scan" x1="0" y1="159.15" x2="900" y2="159.15" style="--base:0.4175;--delay:2.82s;--dur:4.2s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="163.83" x2="900" y2="163.83" style="--base:0.3962272727272727;--delay:2.91s;--dur:3.2s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="168.51" x2="900" y2="168.51" style="--base:0.37495454545454554;--delay:2.99s;--dur:3.45s" stroke-width="1.4"/>
+  <line class="scan" x1="0" y1="173.19" x2="900" y2="173.19" style="--base:0.3536818181818182;--delay:3.07s;--dur:3.7s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="177.87" x2="900" y2="177.87" style="--base:0.33240909090909093;--delay:3.15s;--dur:3.95s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="182.55" x2="900" y2="182.55" style="--base:0.3111363636363636;--delay:3.24s;--dur:4.2s" stroke-width="1.4"/>
+  <line class="scan" x1="0" y1="187.23" x2="900" y2="187.23" style="--base:0.28986363636363643;--delay:3.32s;--dur:3.2s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="191.91" x2="900" y2="191.91" style="--base:0.2685909090909091;--delay:3.4s;--dur:3.45s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="196.6" x2="900" y2="196.6" style="--base:0.2472727272727273;--delay:3.49s;--dur:3.7s" stroke-width="1.4"/>
+  <line class="scan" x1="0" y1="201.28" x2="900" y2="201.28" style="--base:0.22600000000000003;--delay:3.57s;--dur:3.95s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="205.96" x2="900" y2="205.96" style="--base:0.2047272727272727;--delay:0.05s;--dur:4.2s" stroke-width="1.1"/>
+  <line class="scan" x1="0" y1="210.64" x2="900" y2="210.64" style="--base:0.18345454545454554;--delay:0.14s;--dur:3.2s" stroke-width="1.4"/>
+  <line class="scan" x1="0" y1="215.32" x2="900" y2="215.32" style="--base:0.16218181818181826;--delay:0.22s;--dur:3.45s" stroke-width="1.1"/>
+  <text x="460" y="122" text-anchor="middle" class="word">silverings</text>
+  <rect x="588" y="86" width="4" height="36" fill="#f5f4f2" class="caret"/>
+</g>
+</svg>
